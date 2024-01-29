@@ -15,9 +15,9 @@ def login():
 
     user_pass_hash = users.get(username)
     if user_pass_hash and check_password_hash(user_pass_hash, password):
-        return jsonify({"message": "Login successful"}), 200
+        return jsonify({"message": "success"}), 200
     else:
-        return jsonify({"message": "Invalid credentials"}), 200
+        return jsonify({"message": "Invalid credentialsff"}), 200
 
 if __name__ == '__main__':
     app.run(debug=True)
