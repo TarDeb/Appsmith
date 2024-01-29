@@ -7,6 +7,9 @@ app = Flask(__name__)
 users = {
     "admin": generate_password_hash("12345")
 }
+@app.route('/')
+def index():
+    return 'Welcome to my API!'
 
 
 @app.route('/login', methods=['POST'])
