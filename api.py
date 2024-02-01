@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
-
 # Dummy user data
 users = {
     "admin": generate_password_hash("12345")
